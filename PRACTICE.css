@@ -1,0 +1,16 @@
+body {
+	background-color: CadetBlue;
+	font-family: Arial;
+	font-weight: 300;
+	Text-align: center;
+}
+td {
+	background-color: LightSeaGreen;
+	text-align: center;
+}
+th {
+	background-color: green;
+}
+table {
+	border-collapse: collapse;
+}
