@@ -1,0 +1,56 @@
+h1 {
+	font-family: TimesNewRoman;
+	color: AQUA;
+	
+}
+
+body {
+	background-color: NAVY;
+	font-family: Arial;
+	font-weight: 300;
+	font-size: 14px;
+	Text-align: center;
+	
+}
+td {
+	background-color: 	#87CEFA;
+	text-align: center;
+	height: 110px;
+	width: 175px;
+	color: NAVY;
+	
+}
+th {
+	background-color: 	#20B2AA;
+	height: 45px;
+	width: 64px;
+	color: NAVY;
+	
+}
+table {
+	border-collapse: collapse;	
+}
+
+td:hover {
+	background-color:#00FFFF ;
+}
+
+@keyframes bgcolor {
+ 
+    25% {
+        background-color: 	#0000CD;
+    }
+    50% {
+        background-color: 	#0000FF;
+    }
+    75% {
+        background-color: 	#00CED1;
+    }
+    100% {
+        background-color: 	#008B8B;
+    }
+}
+ body{ 
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+}
