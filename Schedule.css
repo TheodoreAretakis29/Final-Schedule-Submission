@@ -34,8 +34,7 @@ table {
 td:hover {
 	background-color:#00FFFF ;
 }
-
-@keyframes bgcolor {
+ @keyframes bgcolor {
  
     25% {
         background-color: 	#0000CD;
