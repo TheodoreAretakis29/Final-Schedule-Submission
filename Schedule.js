@@ -1,15 +1,6 @@
-function myFunction() {
-    var A = document.getElementsByClassName("gym");
-    var i;
-    for (i = 0; i < A.length; i++) {
-        A[i].style.backgroundColor = "#F0F8FF";
-    }
-	
-	
-	
-	
-	
-switch (courses) {
+var COURSESPLACE = document.getElementById("Classroom").value;
+
+switch (COURSEPLACE) {
     case 'french':
 		console.log("french is the secondary language leanrt.");
         break;
@@ -17,7 +8,7 @@ switch (courses) {
 		console.log("Science is a helpful course, and involves thinking outside the box.");
         break;
     case 'english':
-		console.log("English is an intense course, requiring one to analyse and understand what they are reading.")
+		console.log("English is an intense course, requiring one to analyse and understand what they are reading.");
         break;
     case 'math':
 		console.log("Math is good, math is great, on a math test i gtot an 88");
@@ -25,7 +16,7 @@ switch (courses) {
     case 'computer prog.':
 		console.log("Computer programming is the reason this schedule exists." );
         break;
-    case 'architecture'
+    case 'architecture':
 		console.log("The second option course, architecture teahces us about the various different styles. ");
         break;
     case 'speech':
@@ -34,12 +25,18 @@ switch (courses) {
 	case 'history':
 		console.log("The history course is my personal favourite, teaching students about our candian heritage.");
 		break;
-	case 'reigion':
+	case 'religion':
 		console.log("The secondary 4 religion course involves learning about the history of the church.");
 		break;
-	case 'early'
+	case 'early':
 		console.log("Time to go home early!!!");
-	case 'level assembly'
+	case 'level assembly':
 		console.log("A waste of time");
+		break;
+	case 'late start':
+		console.log("We can sleep in!");
+		break;
+	case 'homeroom':
+		console.log("Will we be arranging a bake sale? Nobody knows.")
+}	
 		
-}
