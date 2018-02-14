@@ -1,50 +1,53 @@
-function Classrooming () {
-var COURSESPLACE = document.getElementById("Classroom").value;
+function Classrooming() {
+	
+var CLASSING = document.getElementById("Classroom").value;
 
-switch (COURSESPLACE) {
+switch (CLASSING) {
     case 'french':
-			var DVD = document.getElementsByClassName("french");
+			CLASSING = "french"
 		break;
     case 'science':
-			var DVD = document.getElementsByClassName("science");
+			CLASSING = "science"
         break;
     case 'english':
-			var DVD = document.getElementsByClassName("english");
+			 CLASSING = "english"
         break;
     case 'math':
-			var DVD = document.getElementsByClassName("math");
+			CLASSING = "math"
         break;
     case 'computer prog.':
-			var DVD = document.getElementsByClassName("computer prog.");
+			 CLASSING= "computer prog."
         break;
     case 'architecture':
-			var DVD = document.getElementsByClassName("architecture");
+			 CLASSING = "architecture"
         break;
     case 'speech':
-			var DVD = document.getElementsByClassName("speech");
+			CLASSING = "speech"
 		break;
 	case 'history':
-			var DVD = document.getElementsByClassName("history");
+			CLASSING = "history"
 		break;
 	case 'religion':
-			var DVD = document.getElementsByClassName("religion");
+			CLASSING = "religion"
 		break;
 	case 'early':
-			var DVD = document.getElementsByClassName("early");
+			CLASSING = "early"
 		break;
 	case 'level assembly':
-			var DVD = document.getElementsByClassName("level assembly");
+			CLASSING = "level assembly"
 		break;
 	case 'late start':
-			var DVD = document.getElementsByClassName("late start");
+			 CLASSING = "late start"
 		break;
 	case 'homeroom':
-			var DVD = document.getElementsByClassName("homeroom");
+			CLASSING = "homeroom"
 		break;
 }
-		for (i = 0; i < DVD.lenght; i++) {
-    DVD[i].style.backgroundColour = "#7FFF00";
-}
+var WhichClass = document.getElementsByName(CLASSING);
+
+		for (i = 0; i < CLASSING.lenght; i++) {
+			CLASSING[i].style.backgroundColor = "#7FFF00";
+			}
 }	
 
 

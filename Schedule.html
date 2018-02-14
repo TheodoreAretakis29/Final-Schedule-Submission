@@ -3,8 +3,7 @@
 <head>
   <title>Theodore Aretakis's Schedule 2017-2018</title>
   <!-- the style element enables me to add CSS into my document without linking an entirely other file to my page! -->
-  <link href="Schedule.css" rel="stylesheet" type="text/css">
-  <script src="Schedule.js"></script>                          
+  <link href="Schedule.css" rel="stylesheet" type="text/css">                         
 <body>
 <h1> Theodore's Class Schedule 2017-2018 </h1>
   <table border="1">
@@ -121,9 +120,61 @@
 		<td class="early">Early <br /> Dismissal</td>
 	</tr>
   </table> 	
-	<form>
-		<input id="Classroom" placeholder="Search for course.." type="text"> 
-		<button onclick="Classrooming()">Search</button>
-	</form>
+		<input id="Classroom" type = "text" name= "search" placeholder="Search for course..">
+		<input type = "submit" onclick="Classrooming()" value="search for enlightenment">
 </body>
+<script> 
+function Classrooming() {
+	
+var CLASSING = document.getElementById("Classroom").value;
+
+switch (CLASSING) {
+    case "French":
+			CLASSING = "french"
+		break;
+    case "Science":
+			CLASSING = "science"
+        break;
+    case "English":
+			 CLASSING = "english"
+        break;
+    case "Math":
+			CLASSING = "math"
+        break;
+    case "Computer prog.":
+			 CLASSING= "computer prog."
+        break;
+    case "Architecture":
+			 CLASSING = "architecture"
+        break;
+    case "Speech":
+			CLASSING = "speech"
+		break;
+	case "History":
+			CLASSING = "history"
+		break;
+	case "Religion":
+			CLASSING = "religion"
+		break;
+	case "Early":
+			CLASSING = "early"
+		break;
+	case "Level assembly":
+			CLASSING = "level assembly"
+		break;
+	case "Late start":
+			 CLASSING = "late start"
+		break;
+	case "Homeroom":
+			CLASSING = "homeroom"
+		break;
+}
+var WhichClass = document.getElementsByClassName(CLASSING);
+
+		for (i = 0; i < WhichClass.lenght; i++) {
+			WhichClass[i].style.backgroundColor = "yellow";
+			}
+}	
+
+</script>
 </html>	
