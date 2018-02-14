@@ -9,6 +9,7 @@
   <table border="1">
    <tr> 
  <!-- The following row contains the days of the school cycle -->
+ <!-- Using the <th> puts them in the first column, which i will not alter. -->
 		<th>Periods</th>
         <th>DAY 1</th>
         <th>DAY 2</th>
@@ -25,6 +26,7 @@
    
    <tr>
  <!-- Here we have our class for period one, every single day. Day A1 begins with a late start, a welcomed addition to student life. -->  
+ <!-- I will be manipulating the <td> element, and all courses using it will go through the same changes -->
 		<th> 8:20 am <br />Period 1 <br /> 9:20 am</th>
 		<td class="gym">Gym <br / > Mr. Miles-run <br /> Gym 1</td>
 		<td class="science">Science <br /> Mr. Jimbo <br /> 232</td>
@@ -120,60 +122,75 @@
 		<td class="early">Early <br /> Dismissal</td>
 	</tr>
   </table> 	
-		<input id="Classroom" type = "text" name= "search" placeholder="Search for course..">
-		<input type = "submit" onclick="Classrooming()" value="search for enlightenment">
+		<input type="text" name="search" placeholder="Search" id="CLASSING">
+		<input type="Submit" onclick="STUDIOUS()" value="Search for enlightenment" id="searching">
+	<form>
+		<input TYPE = "button" onclick="history.go(0)" VALUE="Seek the truth in other places">
+	</form>
+
 </body>
 <script> 
-function Classrooming() {
+var CLASSING;
+function STUDIOUS() {
 	
-var CLASSING = document.getElementById("Classroom").value;
+	var CLASSTIME = document.getElementById("CLASSING").value;
 
-switch (CLASSING) {
-    case "French":
-			CLASSING = "french"
-		break;
-    case "Science":
-			CLASSING = "science"
-        break;
-    case "English":
-			 CLASSING = "english"
-        break;
-    case "Math":
-			CLASSING = "math"
-        break;
-    case "Computer prog.":
-			 CLASSING= "computer prog."
-        break;
-    case "Architecture":
-			 CLASSING = "architecture"
-        break;
-    case "Speech":
-			CLASSING = "speech"
-		break;
-	case "History":
-			CLASSING = "history"
-		break;
-	case "Religion":
-			CLASSING = "religion"
-		break;
-	case "Early":
-			CLASSING = "early"
-		break;
-	case "Level assembly":
-			CLASSING = "level assembly"
-		break;
-	case "Late start":
-			 CLASSING = "late start"
-		break;
-	case "Homeroom":
-			CLASSING = "homeroom"
-		break;
-}
-var WhichClass = document.getElementsByClassName(CLASSING);
+	switch (CLASSTIME) {
+		case "french":
+				CLASSING = "french";
+			break;
+		case "science":
+				CLASSING = "science";
+			break;
+		case "english":
+				 CLASSING = "english";
+			break;
+		case "math":
+				CLASSING = "math";
+			break;
+		case "computer programming":
+				 CLASSING= "computer prog.";
+			break;
+		case "architecture":
+				 CLASSING = "architecture";
+			break;
+		case "speech":
+				CLASSING = "speech";
+			break;
+		case "history":
+				CLASSING = "history";
+			break;
+		case "religion":
+				CLASSING = "religion";
+			break;
+		case "early":
+				CLASSING = "early";
+			break;
+		case "level assembly":
+				CLASSING = "level assembly";
+			break;
+		case "late start":
+				 CLASSING = "late start";
+			break;
+		case "homeroom":
+				CLASSING = "homeroom";
+			break;
+		case "gym":
+				CLASSING = "gym";
+			break;	
+		case "advisors":
+				CLASSING = "advisors";
+			break;
+		case "mass":
+				CLASSING = "mass";
+			break;	
+	}
+	var WhichClass = document.getElementsByClassName(CLASSING);
+	console.log(WhichClass);
 
-		for (i = 0; i < WhichClass.lenght; i++) {
-			WhichClass[i].style.backgroundColor = "yellow";
-			}
+	for (i = 0; i < WhichClass.length; i++) {
+		WhichClass[i].style.backgroundColor = "lime";
+	}
 }	
 
 </script>
