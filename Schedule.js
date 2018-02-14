@@ -1,56 +1,56 @@
-function Classrooming ()
+function Classrooming () {
 var COURSESPLACE = document.getElementById("Classroom").value;
 
 switch (COURSESPLACE) {
     case 'french':
-		console.log("french is the secondary language leanrt.");
-			var DVD = "French";
-        break;
+			var DVD = document.getElementsByClassName("french");
+		break;
     case 'science':
-		console.log("Science is a helpful course, and involves thinking outside the box.");
-			var DVD = "science";
+			var DVD = document.getElementsByClassName("science");
         break;
     case 'english':
-		console.log("English is an intense course, requiring one to analyse and understand what they are reading.");
-			var DVD = "english";
+			var DVD = document.getElementsByClassName("english");
         break;
     case 'math':
-		console.log("Math is good, math is great, on a math test i gtot an 88");
-			var DVD = "math";
+			var DVD = document.getElementsByClassName("math");
         break;
     case 'computer prog.':
-		console.log("Computer programming is the reason this schedule exists." );
-			var DVD = "comoputer prog.";
+			var DVD = document.getElementsByClassName("computer prog.");
         break;
     case 'architecture':
-		console.log("The second option course, architecture teahces us about the various different styles. ");
-			var DVD = "architecture";
+			var DVD = document.getElementsByClassName("architecture");
         break;
     case 'speech':
-		console.log("Speech pushes students out of their comfort zone, enabling them to become confident public speakers.");
-			var DVD = "speech";
+			var DVD = document.getElementsByClassName("speech");
 		break;
 	case 'history':
-		console.log("The history course is my personal favourite, teaching students about our candian heritage.");
-			var DVD = "history";
+			var DVD = document.getElementsByClassName("history");
 		break;
 	case 'religion':
-		console.log("The secondary 4 religion course involves learning about the history of the church.");
-			var DVD = "religion";
+			var DVD = document.getElementsByClassName("religion");
 		break;
 	case 'early':
-		console.log("Time to go home early!!!");
-			var DVD = "early";
+			var DVD = document.getElementsByClassName("early");
+		break;
 	case 'level assembly':
-		console.log("A waste of time");
-			var DVD = "level assembly";
+			var DVD = document.getElementsByClassName("level assembly");
 		break;
 	case 'late start':
-		console.log("We can sleep in!");
-			var DVD = "late start";
+			var DVD = document.getElementsByClassName("late start");
 		break;
 	case 'homeroom':
-		console.log("Will we be arranging a bake sale? Nobody knows.");
-			var DVD = "homeroom";
+			var DVD = document.getElementsByClassName("homeroom");
+		break;
+}
+		for (i = 0; i < DVD.lenght; i++) {
+    DVD[i].style.backgroundColour = "#7FFF00";
+}
 }	
-	var Monado = 
+
+
+	
+	
+	
+	
+	
+	
