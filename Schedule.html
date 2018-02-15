@@ -58,7 +58,7 @@
 	</tr>
 
 	<tr>
-<!-- Finally something noteworthy, as you can see, instead of putting no class, or a class, I added "Mass or Assembly" to A3 since that's what typically happens then. -->
+<!-- Finally something noteworthy, as you can see and as most likely noted above, there is a class that each one of m respect courses has. This will group them up, for example all periods of religion in one, all french in another. -->
 		<th>10:40 am <br />Period 3 <br /> 11:40 am</th>
 		<td class="english">English <br /> Mrs. Poe <br /> NW 253 </td>
 		<td class="french">French <br /> Mme. French <br /> NW 151</td>
@@ -75,6 +75,7 @@
 
 	<tr>
 <!-- Here's period 4, previously known as Tags, and here there's also something different: Advisors.	-->
+<!-- And because each course has its own class, they can all be selected, without affecting any other things on the table. -->		
 		<th>12:30 pm<br />Period 4 <br />1:00 pm</th>
 		<td class="computer prog.">Computer prog. <br /> Mr. Floyd <br /> Comp. Lab C</td>
 		<td class="speech">Speech <br /> Mr. Mars <br /> 136</td>
@@ -130,12 +131,14 @@
 
 </body>
 <script> 
+/* Welcome to the javascript section, where all of the magic happens. This is where the previously established classes come into full effect.*/
 var CLASSING;
 function STUDIOUS() {
-	
+/* The function titled "STUDIOUS" is going to contain all of the necessary components, such as a switch, and a for loop */
 	var CLASSTIME = document.getElementById("CLASSING").value;
-
+/*The variable Classtime is connected to the ID "CLASSING", which belongs to the search bar, thus connecting the two and setting up the switch. */
 	switch (CLASSTIME) {
+/* Welcome to the old Switcheroo, where we'll be enabling the classes that were created to interact with the search bar using the words next to the "case" element.*/			
 		case "french":
 				CLASSING = "french";
 			break;
@@ -185,11 +188,13 @@ function STUDIOUS() {
 				CLASSING = "mass";
 			break;	
 	}
+/* As you can see above, this was done for every single one of courses, so that there will always be a result once searched. */	
 	var WhichClass = document.getElementsByClassName(CLASSING);
 	console.log(WhichClass);
-
+/* Now we're getting down to the final steps which lets me change the colour of the course i wish to look up.*/	
 	for (i = 0; i < WhichClass.length; i++) {
 		WhichClass[i].style.backgroundColor = "lime";
+/* Thanks to this newly established variable, we were able to connect eveything together, and with the above for loop, you can now see a colour change to any course that you look up.*/		
 	}
 }	
 
