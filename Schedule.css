@@ -1,7 +1,7 @@
 h1 {
 	font-family: TimesNewRoman;
 	color: AQUA;
-	
+/* The above CSS code will stylize the title of my schedule */
 }
 
 body {
@@ -10,7 +10,8 @@ body {
 	font-weight: 300;
 	font-size: 14px;
 	Text-align: center;
-	
+/* The above changes the background colour of the table, the font letters, and size as well as their position within the box. all of this is done byentering in specific characteristics 
+that apply */
 }
 td {
 	background-color: 	#87CEFA;
@@ -25,12 +26,12 @@ th {
 	height: 45px;
 	width: 64px;
 	color: NAVY;
-	
+/* Very same thing for the above two. */
 }
 table {
 	border-collapse: collapse;	
 }
-
+/* This border collapse is special because it changes the way that the bsides of the oxes in the table appear*/
 td:hover {
 	background-color:#00FFFF ;
 }
@@ -53,3 +54,5 @@ td:hover {
     animation: bgcolor 10s infinite;
     -webkit-animation-direction: alternate;
 }
+
+/* This last chunk is key for my background of the page beccause it causes it to shift and change colours throughout time, as youre on that website.*/
